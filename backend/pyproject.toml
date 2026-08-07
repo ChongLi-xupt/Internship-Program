@@ -1,0 +1,18 @@
+[project]
+name = "rag-smart-query"
+version = "0.1.0"
+description = "Enterprise RAG Q&A and Smart Data Query System"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
